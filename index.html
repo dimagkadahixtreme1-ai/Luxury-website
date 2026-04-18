@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heera Store | Premium Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --accent-color: #d4af37; /* Gold */
+            --text-main: #ffffff;
+            --text-dim: #a0a0a0;
+            --card-bg: #1a1a1a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            padding: 2rem;
+            text-align: center;
+            letter-spacing: 4px;
+            font-weight: bold;
+            color: var(--accent-color);
+            text-transform: uppercase;
+        }
+
+        /* Hero Section */
+        header {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: clamp(3rem, 10vw, 5rem);
+            font-weight: 300;
+            margin-bottom: 1rem;
+            letter-spacing: -2px;
+        }
+
+        header p {
+            color: var(--text-dim);
+            font-size: 1.2rem;
+            max-width: 600px;
+        }
+
+        /* About Section */
+        .section {
+            padding: 100px 10%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .about h2 {
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Gallery Grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .gallery-item {
+            background: var(--card-bg);
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+
+        .gallery-item:hover {
+            border-color: var(--accent-color);
+        }
+
+        /* Contact Form */
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin-top: 30px;
+        }
+
+        input, textarea {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #333;
+            padding: 15px 0;
+            color: white;
+            margin-bottom: 20px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: var(--accent-color);
+        }
+
+        button {
+            background: var(--accent-color);
+            color: black;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px;
+            color: var(--text-dim);
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .section { padding: 50px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>Heera Store</nav>
+
+    <header>
+        <h1>Excellence Defined.</h1>
+        <p>Curating the finest collection of premium essentials for the modern lifestyle.</p>
+    </header>
+
+    <section class="section about">
+        <h2>Our Legacy</h2>
+        <p>At Heera Store, we believe in the power of minimalism and the strength of quality. Our firm specializes in sourcing rare, high-end products that bridge the gap between functionality and art.</p>
+    </section>
+
+    <section class="section">
+        <h2>Collection</h2>
+        <div class="gallery">
+            <div class="gallery-item">Placeholder 1</div>
+            <div class="gallery-item">Placeholder 2</div>
+            <div class="gallery-item">Placeholder 3</div>
+            <div class="gallery-item">Placeholder 4</div>
+        </div>
+    </section>
+
+    <section class="section contact">
+        <h2>Get In Touch</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea rows="4" placeholder="Your Message"></textarea>
+            <button type="submit">Inquire Now</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2026 Heera Store. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
